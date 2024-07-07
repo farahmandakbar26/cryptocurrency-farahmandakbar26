@@ -1,0 +1,22 @@
+@import '_pull-request-compare-bar';
+@import '_pull-request-tabs';
+@import '_file-diff-viewer';
+
+#pull-request-view {
+  .tab-content {
+    border-top: var(--base-border);
+    // Child resizable components won't display with out a defined height
+    height: 100%;
+  }
+
+  .pr-commits-tab-view {
+    display: flex;
+    flex: 1 1 auto;
+    // Child resizable components won't display with out a defined height
+    height: 100%;
+
+    > div {
+      display: flex;
+    }
+  }
+}
