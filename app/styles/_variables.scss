@@ -1,0 +1,122 @@
+// Variables
+//
+// This files contains CSS variables accessible to all selectors
+
+// Primer colors, see https://github.com/primer/primer-css/blob/master/modules/primer-support/lib/variables/color-system.scss
+@import '~primer-support/lib/variables/color-system.scss';
+
+:root {
+  --button-height: 25px;
+  --button-border-radius: 6px;
+
+  // Typography
+  //
+  // Font, line-height, and color for body text, headings, and more.
+  $emoji_fallback_fonts: 'Apple Color Emoji', 'Segoe UI', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --font-family-sans-serif: system-ui, sans-serif, #{$emoji_fallback_fonts};
+  --font-family-monospace: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace, #{$emoji_fallback_fonts};
+
+  /**
+   * Font weight to use for semibold text
+   */
+  --font-weight-semibold: 600;
+
+  /**
+   * Font weight to use for light text
+   */
+  --font-weight-light: 300;
+
+  // Pixel value used to responsively scale all typography. Applied to the `<html>` element.
+  // When adding a new font-size variable, please update the fix-emoji-spacing.ts file.
+  --font-size: 12px;
+  --font-size-sm: 11px;
+  --font-size-md: 14px;
+  --font-size-lg: 28px;
+  --font-size-xl: 32px;
+  --font-size-xxl: 42px;
+
+  /** Extra small font size, be very conservative with the use of this */
+  --font-size-xs: 9px;
+
+  /**
+   * The height of the title bar area on Win32 platforms
+   * If changed, update titleBarHeight in 'app/src/ui/dialog/dialog.tsx'
+  */
+  --win32-title-bar-height: 28px;
+
+  /**
+   * The height of the title bar area on darwin platforms
+   * If changed, update titleBarHeight in 'app/src/ui/dialog/dialog.tsx'
+  */
+  --darwin-title-bar-height: 22px;
+
+  --spacing: 10px;
+  --spacing-double: calc(var(--spacing) * 2);
+  --spacing-triple: calc(var(--spacing) * 3);
+  --spacing-quad: calc(var(--spacing) * 4);
+  --spacing-quint: calc(var(--spacing) * 5);
+  --spacing-half: calc(var(--spacing) / 2);
+  --spacing-third: calc(var(--spacing) / 3);
+
+  --border-radius: 6px;
+
+  // When we use the regular border radius (6px) the outline
+  // leaves a tiny gap in the corners so we drop down to a
+  // similar value than Chrome's default outline border radius.
+  --outlined-border-radius: 3px;
+
+  --toolbar-height: 50px;
+
+  --tab-bar-height: 29px;
+
+  /** Windows/Linux have custom scrollbars, see _scroll.scss */
+  --win32-scroll-bar-size: 10px;
+  --linux-scroll-bar-size: 10px;
+
+  /**
+   * The z-index for tooltips. Nothing should be higher, but other z-indexes can
+   * be defined in terms of it.
+   *
+   * 20 seems arbitrary (because it is) but we have to go that high because
+   * codemirror is all over the place with their z-indexes and uses at least
+   * 0-6.
+   */
+  --tooltip-z-index: 20;
+  --popup-z-index: 19;
+  --popup-overlay-z-index: 18;
+  --foldout-z-index: 17;
+  --nudge-arrow-z-index: 16;
+  --drag-overlay-z-index: 15;
+  --side-panel-z-index: 14;
+  // We want second level to fall under top level when scrolling
+  --list-sticky-header-top-level-z-index: 11;
+  --list-sticky-header-second-level-z-index: 10;
+
+  /**
+   * Variables for form elements
+   */
+  --text-field-height: 25px;
+
+  /**
+   * Diff view
+   */
+
+  --diff-line-padding-y: 2px;
+  --diff-line-number-column-width: 50px;
+
+  // Note that this duration *must* match the `UndoCommitAnimationTimeout`
+  // specified in `changes/index.tsx`.
+  --undo-animation-duration: 500ms;
+
+  /** Inline paths and code */
+  --path-segment-padding: var(--spacing-third);
+
+  // http://easings.net/#easeOutBack
+  --easing-ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  // http://easings.net/#easeInBack
+  --easing-ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+
+  // http://easings.net/#easeOutQuint
+  --easing-ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+}
