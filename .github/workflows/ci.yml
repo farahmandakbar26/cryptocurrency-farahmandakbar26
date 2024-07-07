@@ -128,7 +128,7 @@ jobs:
           npm_config_arch: ${{ matrix.arch }}
           WINDOWS_CERT_PASSWORD: ${{ secrets.WINDOWS_CERT_PASSWORD }}
       - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         if: ${{ inputs.upload-artifacts }}
         with:
           name: ${{matrix.friendlyName}}-${{matrix.arch}}
