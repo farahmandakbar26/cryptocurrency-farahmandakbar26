@@ -1,0 +1,42 @@
+.pull-request-compare-bar {
+  background-color: var(--box-alt-background-color);
+  padding: var(--spacing-half) var(--spacing) var(--spacing-half) var(--spacing);
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .title {
+      font-size: var(--app-view-header-font);
+      font-weight: var(--font-weight-semi-bold);
+    }
+
+    .middle-box {
+      flex-grow: 1;
+    }
+
+    .button-component {
+      min-width: 130px;
+
+      &[type='submit'] {
+        margin-right: var(--spacing);
+      }
+    }
+  }
+
+  .controls {
+    display: flex;
+    align-items: center;
+
+    .branch-box {
+      min-width: 200px;
+      padding: 0 var(--spacing-half);
+      display: inline-block;
+    }
+
+    .ref-component {
+      background: var(--path-segment-background-darker);
+      margin-left: var(--spacing-half);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import '_pull-request-compare-bar';
+@import '_pull-request-tabs';
+
+#pull-request-view {
+  .file-list {
+    display: flex;
+    flex: 1;
+
+    border-right: var(--base-border);
+  }
+
+  .tab-content {
+    border-top: var(--base-border);
+    display: flex;
+    // Child resizable components won't display with out a defined height
+    height: 100%;
+  }
+
+  .pr-commits-tab-view {
+    display: flex;
+    flex: 1 1 auto;
+
+    > div {
+      display: flex;
+    }
+  }
+}
