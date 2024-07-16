@@ -1,6 +1,75 @@
-version: 2
-updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
+
+"github.dev/farahmandakbar26/farahmandakbar26/blob",
+{
+  "image": "@farahmandakbar26 farahmandakbar26 
+نام:CI
+
+در: github.com/farahmandakbar26/desktop/edit/development/.github/workflows/ci.yml
+فشار:
+شاخه‌ها:
+- توسعه pull_request: workflow_call: ورودی‌ها: مخزن: پیش‌فرض: دسکتاپ/دسکتاپ مورد نیاز: نوع نادرست: رشته ref: مورد نیاز : نوع واقعی: رشته آپلود-مصنوعات: پیش‌فرض: نادرست مورد نیاز: نوع نادرست: محیط بولی: نوع: رشته مورد نیاز: اسرار واقعی: DESKTOP_OAUTH_CLIENT_ID: DESKTOP_OAUTH_CLIENT_SECRET: APPLE_ID: APPLE_ID_PASSWORD: APPLE_ID_PASSWORD: APPLE_ID_PASSWORD: APPLE_ID_PASSWORD WINDOWS_CERT_PFX: WINDOWS_CERT_PASSWORD:
+
+jobs:نام : NodeJS با Webpack
+
+بر :
+  فشار دادن :
+    شاخه ها : ["توسعه"]
+  pull_request :
+    شاخه ها : ["توسعه"]
+
+شغل ها :
+  ساختن :
+    runs-on : ubuntu-latest
+
+    استراتژی :
+      ماتریس :
+        نود-نسخه : [14.x، 16.x، 18.x]
+
+    مراحل :
+    - موارد استفاده : actions/checkout@v3
+
+    - name : از Node.js ${{ matrix.node-version }} استفاده کنید
+      موارد استفاده : actions/setup-node@v3
+      با :
+        node-version : ${{ matrix.node-version }}
+
+    - نام : ساخت
+      اجرا کنید : github.dev/farahmandakbar26/farahmandakbar26
+        npm نصب کنید
+        بسته وب npx
+lint:[![NodeJS with Webpack](https://github.com/farahmandakbar26/cryptocurrency-farahmandakbar26/actions/workflows/webpack.yml/badge.svg)](https://github.com/farahmandakbar26/cryptocurrency-farahmandakbar26/actions/workflows/webpack.yml)
+name: Lint اجرا می‌شود: ubuntu-آخرین مراحل: - موارد استفاده: actions/checkout@v3 با: مخزن: ${{ inputs.repository || github.repository }}
+
+بستن #[شماره شماره]
+
+شرح
+اسکرین شات ها
+یادداشت های انتشار
+یادداشت:[![NodeJS with Webpack](https://github.com/farahmandakbar26/cryptocurrency-farahmandakbar26/actions/workflows/webpack.yml/badge.svg)](https://github.com/farahmandakbar26/cryptocurrency-farahmandakbar26/actions/workflows/webpack.yml)
+
+/devcontainers/universal:2",
+  "features": {
+  }
+}
+Octicons
+https://github.com/farahmandakbar26/Octicons octicons cover dark
+
+Octicons Octicons are a set of SVG icons built by GitHub for GitHub.
+
+Libraries This repository contains several libraries. Each of them is in the lib/ folder and gives access to Octicons on a different platform/language.
+
+JavaScript The octicons node.js library is the main JavaScript library. With a JavaScript API that can be used in a variety of applications.
+
+Package Version @primer/octicons Node.js package with JavaScript API npm version @primer/octicons-react React Octicons components npm version @primer/styled-octicons React Octicons components with Styled System props npm version Ruby Package Version octicons Ruby gem with Ruby API Gem version octicons_helper Rails helper for using octicons Gem version jekyll-octicons Jekyll plugin for using octicons Gem version Contributing Feedback, ideas, and bug reports If you have feedback and ideas for improvement, open a new issue in this repo, using the appropriate issue template.
+
+Request a new icon (GitHub staff only) To request a new icon, open an issue using the icon request template in github/primer.
+
+Adding or updating an icon Read through our contributing guide if you want to add or update icons.
+
+License (c) GitHub, Inc.
+
+When using the GitHub logos, be sure to follow the GitHub logo guidelines.
+
+Code License: MIT Applies to all other files
+https://github.com/farahmandakbar26/cryptocurrency-farahmandakbar26
+https://github.dev/farahmandakbar26/farahmandakbar26
