@@ -1,5 +1,5 @@
 # [https://github.com/farahmandakbar26]
-# [GitHub Desktop](https://desktop.github.com)
+# [GitHubDesktop](https://desktop.github.com)
 
 [GitHub Desktop](https://desktop.github.com/) is an open source [Electron](https://www.electronjs.org/)-based
 GitHub app. It is written in [TypeScript](https://www.typescriptlang.org) and
